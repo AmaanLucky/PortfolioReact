@@ -12,14 +12,14 @@
     "imageSrc": "projects/project.png",
     "description": "Predicting stock prices using company previous data and ML.",
     "skills": ["TensorFlow","Stock Market Analysis"],
-    "source": "https://www.example.com"
+    "source": "https://github.com/AmaanLucky/"
   },
   {
-    "title": "Phishing Website Detection",
+    "title": "Notion Clone - Chotaa Notion",
     "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["Machine Learning"],
-    "demo": "https://www.example.com"
+    "description": "Chotaa Notion that allows you to create, edit, and organize your notes.",
+    "skills": ["MERN","Firebase"],
+    "source": "https://github.com/AmaanLucky/Notion_Clone"
   },
   {
     "title": "Budget Planner",

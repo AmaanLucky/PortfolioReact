@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  background: linear-gradient(180deg, #c0c4d2 0%, #03093f 100%);
+  background: linear-gradient(180deg, #5c7be8 0%, #1c2575 100%);
   box-shadow: 0 16px 14px 0 #04152d;
   padding: 18px 24px;
   max-width: 345px;
@@ -16,6 +16,11 @@
 
 .title {
   font-size: 25px;
+  font-weight: 700;
+}
+
+.titleText {
+  color: #ffffff;
   font-weight: 700;
 }
 

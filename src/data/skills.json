@@ -26,5 +26,9 @@
   {
     "title": "NodeJs",
     "imageSrc": "skills/node.png"
+   },
+   {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.png"
    }
 ]
