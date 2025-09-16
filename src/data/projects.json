@@ -19,13 +19,15 @@
     "imageSrc": "projects/project.png",
     "description": "Chotaa Notion that allows you to create, edit, and organize your notes.",
     "skills": ["MERN","Firebase"],
-    "source": "https://github.com/AmaanLucky/Notion_Clone"
+    "source": "https://github.com/AmaanLucky/Notion_Clone",
+    "demo": "https://chotaanotion.onrender.com/"
   },
   {
     "title": "Budget Planner",
     "imageSrc": "projects/project.png",
     "description": "A full-stack budget app for tracking expenses, setting limits, and analyzing spending habits.",
     "skills": ["MERN", "JWT"],
+    "source": "https://github.com/AmaanLucky/budget-planner-frontend",
     "demo": "https://wealthio.onrender.com"
 }
 
