@@ -7,13 +7,15 @@
     "demo": "https://amaanlucky.github.io/Portfolio/",
     "source": "https://www.github.com"
   },
+
   {
-    "title": "Stock Price Prediction",
+    "title": "Kliks - Photography Portfolio",
     "imageSrc": "projects/project.png",
-    "description": "Predicting stock prices using company previous data and ML.",
-    "skills": ["TensorFlow","Stock Market Analysis"],
-    "source": "https://github.com/AmaanLucky/"
+    "description": "A photography portfolio website to showcase my best shots.",
+    "skills": ["React","ImageKit"],
+    "source": "https://kliks.onrender.com"
   },
+
   {
     "title": "Notion Clone - Chotaa Notion",
     "imageSrc": "projects/project.png",

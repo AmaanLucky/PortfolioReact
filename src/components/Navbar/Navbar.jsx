@@ -9,7 +9,7 @@ export const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <a className={styles.title} 
-      href="https://drive.google.com/file/d/1QMt-z9eOnduwFMOXuXrbXJz2RPEOOYrp/view?usp=sharing"
+      href="https://drive.google.com/file/d/1u702nk2QiV_U7FUuktzau9sFqX8I4kX0/view?usp=sharing"
        target="_blank">
         Portfolio
       </a>
