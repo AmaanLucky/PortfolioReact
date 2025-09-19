@@ -13,7 +13,8 @@
     "imageSrc": "projects/project.png",
     "description": "A photography portfolio website to showcase my best shots.",
     "skills": ["React","ImageKit"],
-    "source": "https://kliks.onrender.com"
+    "source": "https://github.com/AmaanLucky/Kliks",
+    "demo": "https://kliks.onrender.com"
   },
 
   {
