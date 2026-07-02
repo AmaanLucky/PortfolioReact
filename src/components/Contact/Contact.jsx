@@ -8,12 +8,16 @@ export const Contact = () => {
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
         <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
+        <p>Open to new opportunities, collaborations, and product-building conversations.</p>
       </div>
       <ul className={styles.links}>
         <li className={styles.link}>
           <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:amaanahmed2405@email.com">amaanahmed2405@gmail.com</a>
+          <a href="mailto:amaanahmed2405@gmail.com">amaanahmed2405@gmail.com</a>
+        </li>
+        <li className={styles.link}>
+          <img src={getImageUrl("contact/phoneIcon.png")} alt="Phone icon" />
+          <span>+91 9989583343</span>
         </li>
         <li className={styles.link}>
           <img
@@ -24,7 +28,7 @@ export const Contact = () => {
         </li>
         <li className={styles.link}>
           <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://github.com/AmaanLucky ">github.com/AmaanLucky</a>
+          <a href="https://github.com/AmaanLucky">github.com/AmaanLucky</a>
         </li>
       </ul>
     </footer>

@@ -1,28 +1,24 @@
 [
   {
-    "role": "Web Developer",
-    "organisation": "Codsoft",
-    "startDate": "Nov, 2023",
-    "endDate": "Dec, 2023",
-    "experiences": ["Created dynamic Calculator and Portfolio","Pushed myself to improve technical ability"]
+    "role": "Associate Software Engineer",
+    "organisation": "Minfy Technologies",
+    "startDate": "Oct 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Working on the modernization of a medical document management platform for Navitas Life Sciences from .NET 4.8 to .NET 8 and React.",
+      "Built a role-based user management portal with AD/non-AD access control and enterprise authentication using SAML and OIDC.",
+      "Implemented document approval workflows, JWT-based module flows, AWS S3-backed storage, and audit logging for compliance."
+    ]
   },
   {
-    "role": "Student",
-    "organisation": "SNIST",
-    "startDate": "Mar, 2024",
-    "endDate": "May, 2024",
+    "role": "Software Engineering Intern",
+    "organisation": "Minfy Technologies",
+    "startDate": "May 2025",
+    "endDate": "Sep 2025",
     "experiences": [
-        "Configured network devices and implemented security practices.",
-        "Designed and troubleshot IPv4/IPv6 addressing schemes."
+      "Contributed to the client project lifecycle from requirement gathering through deployment support.",
+      "Resolved migration-related frontend and backend issues while strengthening full-stack development skills.",
+      "Gained practical experience in collaborative delivery, debugging, and enterprise application development."
     ]
-},
-{
-  "role": "SDE Intern",
-  "organisation": "Minfy Technologies",
-  "startDate": "April, 2025",
-  "endDate": "Present",
-  "experiences": ["Working as a Software Developer Intern at Minfy Technologies",
-                  "Upskilling myself in the field of Development"]
-}
-
+  }
 ]

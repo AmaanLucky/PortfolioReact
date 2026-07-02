@@ -1,37 +1,34 @@
 [
   {
-    "title": "Personal Portfolio Website",
+    "title": "Navitas Life Sciences",
     "imageSrc": "projects/project.png",
-    "description": "Web & ML Developer | Passion for Innovation and Problem-Solving",
-    "skills": ["HTML","CSS","Animation"],
-    "demo": "https://amaanlucky.github.io/Portfolio/",
-    "source": "https://www.github.com"
+    "description": "Modernized a medical document management platform by migrating the legacy system to a modern React and .NET 8-based architecture with secure role-based access and approval workflow. ",
+    "skills": ["React", ".NET 8", "SVN"],
+    "demo": "",
+    "source": ""
   },
-
   {
     "title": "Kliks - Photography Portfolio",
     "imageSrc": "projects/project.png",
-    "description": "A photography portfolio website to showcase my best shots.",
-    "skills": ["React","ImageKit"],
+    "description": "Designed and built a responsive photography portfolio focused on showcasing personal work with a clean gallery-style experience.",
+    "skills": ["React", "Responsive UI"],
     "source": "https://github.com/AmaanLucky/Kliks",
     "demo": "https://kliks.onrender.com"
   },
-
   {
-    "title": "Notion Clone - Chotaa Notion",
+    "title": "Chotaa Notion - Real-Time Collaboration",
     "imageSrc": "projects/project.png",
-    "description": "Chotaa Notion that allows you to create, edit, and organize your notes.",
-    "skills": ["MERN","Firebase"],
+    "description": "Developed an MVP inspired by Notion with collaborative document editing features and a user-friendly interface for team use.",
+    "skills": ["MERN", "Firebase"],
     "source": "https://github.com/AmaanLucky/Notion_Clone",
     "demo": "https://chotaa.onrender.com/"
   },
   {
     "title": "Budget Planner",
     "imageSrc": "projects/project.png",
-    "description": "A full-stack budget app for tracking expenses, setting limits, and analyzing spending habits.",
+    "description": "Built a full-stack expense tracker with budget limits, filtering, and secure authentication to help users manage personal finances effectively.",
     "skills": ["MERN", "JWT"],
     "source": "https://github.com/AmaanLucky/budget-planner-frontend",
     "demo": "https://wealthio.onrender.com"
-}
-
+  }
 ]

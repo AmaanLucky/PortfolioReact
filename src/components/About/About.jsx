@@ -17,28 +17,27 @@ export const About = () => {
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
             <div className={styles.aboutItemText}>
-              <h3>Frontend Developer</h3>
+              <h3>Full-Stack Development</h3>
               <p>
-                I'm a frontend developer with experience in building responsive
-                and optimized sites
+                I build responsive web applications with React on the frontend and Node.js, Express, and MongoDB on the backend.
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
             <div className={styles.aboutItemText}>
-              <h3>Backend and Database Skills</h3>
+              <h3>Enterprise Modernization</h3>
               <p>
-              Experienced in developing efficient backend systems, APIs, and working with SQL databases to ensure seamless data management.
+                I have experience modernizing legacy systems, implementing secure role-based portals, and integrating authentication flows for real-world client projects.
               </p>
             </div>
           </li>
           <li className={styles.aboutItem}>
             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
             <div className={styles.aboutItemText}>
-              <h3>Problem Solver</h3>
+              <h3>Continuous Learning</h3>
               <p>
-              Skilled in logic-building patterns and solving complex problems to create scalable and optimized solutions.
+                I enjoy understanding systems deeply, improving architecture, and learning new tools such as AWS while keeping code scalable and maintainable.
               </p>
             </div>
           </li>

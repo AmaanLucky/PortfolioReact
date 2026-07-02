@@ -1,15 +1,23 @@
 [
   {
-    "title": "HTML",
+    "title": "JavaScript",
     "imageSrc": "skills/html.png"
   },
   {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
+    "title": "C++",
+    "imageSrc": "skills/cpp.png"
   },
   {
     "title": "React",
     "imageSrc": "skills/react.png"
+  },
+  {
+    "title": "Node.js",
+    "imageSrc": "skills/node.png"
+  },
+  {
+    "title": "Express.js",
+    "imageSrc": "skills/node.png"
   },
   {
     "title": "MongoDB",
@@ -20,15 +28,15 @@
     "imageSrc": "skills/sql.png"
   },
   {
-    "title": "CPP",
-    "imageSrc": "skills/cpp.png"
-  },
-  {
-    "title": "NodeJs",
-    "imageSrc": "skills/node.png"
-   },
-   {
     "title": "Firebase",
     "imageSrc": "skills/firebase.png"
-   }
+  },
+  {
+    "title": "Tailwind CSS",
+    "imageSrc": "skills/css.png"
+  },
+  {
+    "title": "AWS",
+    "imageSrc": "skills/react.png"
+  }
 ]

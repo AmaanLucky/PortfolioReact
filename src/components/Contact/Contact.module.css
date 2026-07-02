@@ -19,7 +19,7 @@
 }
 
 .text p {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -35,15 +35,24 @@
 .link {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 18px;
 }
 
-.link a {
+.link img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.link a,
+.link span {
   color: var(--color-text);
   text-decoration: none;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
   letter-spacing: 1.5px;
+  line-height: 1.2;
 }
 
 @media screen and (max-width: 830px) {
@@ -60,5 +69,15 @@
 
   .links {
     align-items: center;
+  }
+
+  .link img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .link a,
+  .link span {
+    font-size: 20px;
   }
 }
