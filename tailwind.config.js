@@ -16,6 +16,7 @@ export default {
         tan: "#FF9A73",
       },
       fontFamily: {
+        display: ["Unbounded", "Outfit", "Arial", "sans-serif"],
         outfit: ["Outfit", "Arial", "Helvetica", "sans-serif"],
         roboto: ["Roboto", "sans-serif"],
       },

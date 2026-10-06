@@ -1,34 +1,142 @@
 [
   {
-    "title": "Navitas Life Sciences",
+    "title": "Medical Platform Modernization",
     "imageSrc": "projects/project.png",
-    "description": "Modernized a medical document management platform by migrating the legacy system to a modern React and .NET 8-based architecture with secure role-based access and approval workflow. ",
-    "skills": ["React", ".NET 8", "SVN"],
+    "description": "Modernizing a medical document platform from legacy C# and .NET 4.8 to React and .NET 8, including the SSO login flow.",
+    "skills": [
+      "React",
+      ".NET 8",
+      "SSO",
+      "SVN"
+    ],
     "demo": "",
-    "source": ""
+    "kind": "Client project at Minfy Technologies",
+    "status": "Completed",
+    "tagline": "Giving a legacy medical document platform a modern face and a modern engine.",
+    "overview": "A medical document management platform for a life-sciences client, moving from a legacy .NET 4.8 stack to React on the front and .NET 8 on the back.",
+    "did": [
+      "Rebuilt legacy C# pages as React frontend pages, turning client requirements into working screens and adapting the backend as those requirements evolved.",
+      "Migrated the backend from .NET Framework 4.8 to .NET 8.",
+      "Owned the SSO login flow (SAML and OIDC), the most critical path in the platform, and spent a lot of my time debugging and tracing it end to end.",
+      "Concentrated on log records and audit logging, so issues can be traced quickly and compliance needs are met.",
+      "Built the role-based user management portal (AD and non-AD access), document approval workflows, JWT-based module flows and AWS S3-backed storage."
+    ],
+    "takeaway": "I loved taking real client requirements and watching an old system turn into something new, one page at a time.",
+    "stack": [
+      "React",
+      ".NET 8",
+      "SAML",
+      "OIDC",
+      "JWT",
+      "AWS S3",
+      "SVN"
+    ],
+    "clientNumber": 1
   },
   {
-    "title": "Kliks - Photography Portfolio",
+    "title": "Legacy Application Modernization",
     "imageSrc": "projects/project.png",
-    "description": "Designed and built a responsive photography portfolio focused on showcasing personal work with a clean gallery-style experience.",
-    "skills": ["React", "Responsive UI"],
-    "source": "https://github.com/AmaanLucky/Kliks",
-    "demo": "https://kliks.onrender.com"
+    "description": "Modernizing a 16-year-old application with a focus on responsiveness, data-load speed and real user feedback.",
+    "skills": [
+      "Dashboards",
+      "Responsive UI",
+      "Performance"
+    ],
+    "demo": "",
+    "kind": "Client project at Minfy Technologies (client details withheld)",
+    "status": "In progress",
+    "tagline": "Bringing a 16-year-old application into the modern web.",
+    "overview": "The client needs a 16-year-old application modernized, with responsiveness and data-load speed as the main goals.",
+    "did": [
+      "Building the frontend as individual, scoped pages, each focused on one clear job.",
+      "Designing a dashboard that has to show a large amount of dense, cluttered data in the clearest format possible. It is a genuinely difficult design challenge, and one I enjoy.",
+      "Optimizing for responsiveness across screen sizes and for fast data loading.",
+      "Speaking directly with real customers, learning their real use cases, and adjusting the design to match their thoughts and processes."
+    ],
+    "takeaway": "Real users beat assumptions every time. The best decisions came from listening to how people actually work.",
+    "stack": [
+      "Dashboards",
+      "Responsive UI",
+      "Performance"
+    ],
+    "clientNumber": 2
   },
   {
     "title": "Chotaa Notion - Real-Time Collaboration",
     "imageSrc": "projects/project.png",
-    "description": "Developed an MVP inspired by Notion with collaborative document editing features and a user-friendly interface for team use.",
-    "skills": ["MERN", "Firebase"],
-    "source": "https://github.com/AmaanLucky/Notion_Clone",
-    "demo": "https://chotaa.onrender.com/"
+    "description": "My internship MVP inspired by Notion, demonstrating real-time collaboration with Socket.IO and WebSockets.",
+    "skills": [
+      "MERN",
+      "Firebase",
+      "Socket.IO",
+      "WebSockets"
+    ],
+    "demo": "https://chotaa.onrender.com/",
+    "kind": "Internship project",
+    "tagline": "The project that launched my professional career.",
+    "overview": "An MVP inspired by Notion, built during my internship to demonstrate Socket.IO and WebSockets keeping multiple live connections in sync.",
+    "did": [
+      "Built collaborative document editing so several people can work in the same document at once.",
+      "Used Socket.IO and WebSockets to maintain multiple simultaneous connections.",
+      "Built the app on the MERN stack with Firebase and a user-friendly interface for team use."
+    ],
+    "takeaway": "This is the project that took me from learning into a professional career.",
+    "stack": [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "Firebase",
+      "Socket.IO",
+      "WebSockets"
+    ]
   },
   {
     "title": "Budget Planner",
     "imageSrc": "projects/project.png",
-    "description": "Built a full-stack expense tracker with budget limits, filtering, and secure authentication to help users manage personal finances effectively.",
-    "skills": ["MERN", "JWT"],
-    "source": "https://github.com/AmaanLucky/budget-planner-frontend",
-    "demo": "https://wealthio.onrender.com"
+    "description": "My first full-stack project: a MERN expense tracker with budget limits, filtering and secure authentication.",
+    "skills": [
+      "MERN",
+      "JWT"
+    ],
+    "demo": "https://wealthio.onrender.com",
+    "kind": "Personal project",
+    "tagline": "My first full-stack build, and my first real look at how the internet works.",
+    "overview": "A full-stack expense tracker with budget limits, filtering and secure authentication to help manage personal finances.",
+    "did": [
+      "Explored the whole MERN stack for the first time: MongoDB, Express, React and Node.js.",
+      "Added budget limits, expense filtering and JWT-based secure authentication.",
+      "Followed how data travels from one point to another, from the browser through the API and database and back."
+    ],
+    "takeaway": "I learned how things on the internet really work, on the MERN development side and on how data moves across the web.",
+    "stack": [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node.js",
+      "JWT"
+    ]
+  },
+  {
+    "title": "Kliks - Photography Portfolio",
+    "imageSrc": "projects/project.png",
+    "description": "My photography showcase, where my hobbies of photography and nature exploration meet my passion for development.",
+    "skills": [
+      "React",
+      "Responsive UI"
+    ],
+    "demo": "https://kliks.onrender.com",
+    "kind": "Personal project",
+    "tagline": "Where my love of photography and nature meets my passion for development.",
+    "overview": "A responsive photography portfolio that showcases my photography and nature-exploration hobbies in a clean, gallery-style experience.",
+    "did": [
+      "Designed and built a responsive, gallery-style experience in React.",
+      "Used it as a place to bring my hobbies, photography and exploring nature, together with building for the web."
+    ],
+    "takeaway": "Proof that a hobby and a career can feed each other.",
+    "stack": [
+      "React",
+      "Responsive UI"
+    ]
   }
 ]

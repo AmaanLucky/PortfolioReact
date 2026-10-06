@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 
+import { ProjectModal } from "./ProjectModal";
 import { ProjectPlayingCard } from "./ProjectPlayingCard";
 
-const RATIO = 7 / 5;
+const RATIO = 1.5;
 const GAP = 16;
 const PAD = 24;
 
 const getLayout = (viewport) => {
-  if (viewport >= 1200) return { cols: 4, width: 255 };
+  if (viewport >= 1500) return { cols: 5, width: 240 };
+  if (viewport >= 1000) return { cols: 3, width: 250 };
   if (viewport >= 640) return { cols: 2, width: 250 };
   return { cols: 1, width: Math.min(300, Math.round(viewport * 0.8)) };
 };
@@ -25,16 +27,20 @@ const useLayout = () => {
   return layout;
 };
 
-// Desktop (4 columns): hover fans the pile out. Smaller screens: tap toggles pile <-> grid.
+// Wide screens (everything fits in one row): hover fans the pile out.
+// Otherwise a tap toggles pile <-> grid. The + on a card opens its story.
 export const ProjectHand = ({ projects }) => {
   const [fanned, setFanned] = useState(false);
+  const [selected, setSelected] = useState(null);
+  // pre: cards waiting off-screen, dealing: being dealt one by one, done: normal
+  const [phase, setPhase] = useState("pre");
   const reduceMotion = useReducedMotion();
   const { cols, width } = useLayout();
 
   const total = projects.length;
   const height = Math.round(width * RATIO);
   const rows = Math.ceil(total / cols);
-  const hoverMode = cols === 4;
+  const hoverMode = rows === 1 && cols >= 3;
   const mid = (total - 1) / 2;
 
   const fannedHeight = rows * height + (rows - 1) * GAP + PAD;
@@ -47,14 +53,20 @@ export const ProjectHand = ({ projects }) => {
     return {
       x: (col - (rowCount - 1) / 2) * (width + GAP),
       y: row * (height + GAP) + PAD / 2,
-      rotate: cols === 4 ? (i - mid) * 3 : 0,
+      rotate: hoverMode ? (i - mid) * 3 : 0,
     };
   };
 
   const pile = (i) => ({ x: (i - mid) * 12, y: PAD / 2, rotate: (i - mid) * 4 });
 
-  const onPointerEnter = (e) => hoverMode && e.pointerType === "mouse" && setFanned(true);
+  const onPointerEnter = (e) => hoverMode && phase === "done" && e.pointerType === "mouse" && setFanned(true);
   const onPointerLeave = (e) => hoverMode && e.pointerType === "mouse" && setFanned(false);
+
+  const deal = () => {
+    if (phase !== "pre") return;
+    setPhase("dealing");
+    setTimeout(() => setPhase("done"), 1400);
+  };
 
   const transition = reduceMotion
     ? { duration: 0 }
@@ -77,10 +89,19 @@ export const ProjectHand = ({ projects }) => {
         transition={transition}
         onPointerEnter={onPointerEnter}
         onPointerLeave={onPointerLeave}
-        onClick={() => !fanned && setFanned(true)}
+        onViewportEnter={deal}
+        viewport={{ once: true, amount: 0.4 }}
+        onClick={() => !fanned && phase === "done" && setFanned(true)}
       >
         {projects.map((project, i) => {
-          const target = fanned ? spread(i) : pile(i);
+          const target =
+            phase === "pre"
+              ? { x: 520, y: -220, rotate: 35, opacity: 0 }
+              : { ...(fanned ? spread(i) : pile(i)), opacity: 1 };
+          const cardTransition =
+            phase === "dealing" && !reduceMotion
+              ? { ...transition, delay: i * 0.18 }
+              : transition;
           return (
             <motion.div
               key={project.title}
@@ -90,18 +111,19 @@ export const ProjectHand = ({ projects }) => {
                 height,
                 marginLeft: -width / 2,
                 zIndex: total - i,
-                pointerEvents: fanned ? "auto" : "none",
+                pointerEvents: fanned && phase === "done" ? "auto" : "none",
               }}
               initial={false}
               animate={target}
-              whileHover={fanned ? { y: target.y - 10 } : undefined}
-              transition={transition}
+              whileHover={fanned && phase === "done" ? { y: target.y - 10 } : undefined}
+              transition={cardTransition}
             >
               <ProjectPlayingCard
                 project={project}
                 index={i}
                 total={total}
-                interactive={fanned}
+                interactive={fanned && phase === "done"}
+                onOpen={() => setSelected(i)}
               />
             </motion.div>
           );
@@ -111,11 +133,18 @@ export const ProjectHand = ({ projects }) => {
       <button
         type="button"
         aria-expanded={fanned}
-        onClick={() => setFanned((v) => !v)}
-        className="mt-6 rounded-full border border-gold/40 bg-navy-light/80 px-5 py-2 text-sm font-semibold text-offwhite/90 transition-colors hover:border-gold hover:text-gold"
+        onClick={() => phase === "done" && setFanned((v) => !v)}
+        className="mt-8 rounded-full border-[3px] border-white bg-navy px-6 py-3 font-display text-[11px] font-extrabold uppercase tracking-wide text-white shadow-[4px_4px_0_#F96031] transition-colors hover:bg-gold hover:text-navy"
       >
         {hint}
       </button>
+
+      <ProjectModal
+        project={selected === null ? null : projects[selected]}
+        index={selected ?? 0}
+        total={total}
+        onClose={() => setSelected(null)}
+      />
     </div>
   );
 };

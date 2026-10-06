@@ -5,6 +5,8 @@ import "./index.css";
 
 import "@fontsource/outfit";
 import "@fontsource/roboto";
+import "@fontsource/unbounded/700.css";
+import "@fontsource/unbounded/800.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -1,20 +1,29 @@
 import React from "react";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
+// Orange progress bar with a rocket riding at the front.
 export const ScrollProgress = () => {
   const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
+  const progress = useSpring(scrollYProgress, {
     stiffness: 120,
     damping: 25,
     restDelta: 0.001,
   });
+  const left = useTransform(progress, (v) => `${v * 100}%`);
 
   return (
-    <div className="fixed bottom-0 left-0 z-40 h-1 w-full bg-navy-light/40">
+    <div className="pointer-events-none fixed bottom-0 left-0 z-40 h-[6px] w-full bg-navy-light/60">
       <motion.div
-        style={{ scaleX, transformOrigin: "0%" }}
-        className="h-full w-full bg-gradient-to-r from-gold-dark via-gold to-tan"
+        style={{ scaleX: progress, transformOrigin: "0%" }}
+        className="h-full w-full bg-gold"
       />
+      <motion.span
+        aria-hidden="true"
+        style={{ left }}
+        className="absolute -top-[22px] -translate-x-1/2 rotate-45 text-xl leading-none"
+      >
+        &#128640;
+      </motion.span>
     </div>
   );
 };

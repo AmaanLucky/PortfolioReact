@@ -5,7 +5,7 @@
     "startDate": "Oct 2025",
     "endDate": "Present",
     "experiences": [
-      "Working on the modernization of a medical document management platform for Navitas Life Sciences from .NET 4.8 to .NET 8 and React.",
+      "Worked on the modernization of a medical document management platform for a life-sciences client, moving it from .NET 4.8 to .NET 8 and React.",
       "Built a role-based user management portal with AD/non-AD access control and enterprise authentication using SAML and OIDC.",
       "Implemented document approval workflows, JWT-based module flows, AWS S3-backed storage, and audit logging for compliance."
     ]

@@ -7,13 +7,12 @@ export const SectionHeading = ({ eyebrow, title, className = "" }) => {
     <Reveal className={className}>
       <div className="mb-2">
         {eyebrow && (
-          <span className="mb-3 block text-xs font-semibold uppercase tracking-[3px] text-gold">
+          <span className="mb-4 inline-block -rotate-3 rounded-full border-[3px] border-white bg-gold px-4 py-1.5 font-display text-[11px] font-extrabold uppercase tracking-[2px] text-navy shadow-[3px_3px_0_#fff]">
             {eyebrow}
           </span>
         )}
-        <h2 className="relative inline-block pb-3 text-[35px] font-bold uppercase tracking-[1.75px] text-white">
+        <h2 className="block font-display text-[clamp(30px,5.2vw,60px)] font-extrabold uppercase leading-[1.05] text-white [text-shadow:4px_4px_0_#F96031]">
           {title}
-          <span className="absolute bottom-0 left-0 h-1 w-14 rounded-full bg-gradient-to-r from-gold to-tan" />
         </h2>
       </div>
     </Reveal>
